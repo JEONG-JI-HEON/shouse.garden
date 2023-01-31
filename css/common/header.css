@@ -1,0 +1,387 @@
+/* common */
+.w1200{
+  width: 1200px;
+  margin: 0 auto;
+  /* padding: 10px 0;
+  background-color: aquamarine; */
+}
+
+.p40{
+  padding: 40px 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+.sp_common{
+  background-image: url(../../img/sp_common.png);
+}
+
+.desk{
+  display: block;
+}
+
+.mobile{
+  display: none;
+}
+
+/* common */
+
+#header_top_wrap{
+  background-color: #f2f2f2;
+}
+
+#header_bottom_wrap{
+  position: relative;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+#header_top{
+  display: flex;
+  justify-content: space-between;
+}
+
+#header_top ul{
+  display: flex;
+  line-height: 40px;
+}
+
+.h_top_left a{
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
+  margin: 10px 1px;
+  text-indent: -99999px; /* 텍스트 날리기 */
+  background-size: cover;
+  background-position: center center;
+}
+
+.gp{
+  background-image: url(../../img/u_gp.png);
+}
+
+.ap{
+  background-image: url(../../img/u_ap.png);
+}
+
+.ip{
+  background-image: url(../../img/u_in.png);
+}
+
+.cp{
+  background-image: url(../../img/u_kc.png);
+}
+
+.fp{
+  background-image: url(../../img/u_fb.png);
+}
+
+.yp{
+  background-image: url(../../img/u_yt.png);
+}
+
+.h_top_right li{
+  color: #808080;
+  margin-left: 20px;
+}
+
+.h_top_right a{
+  font-size: 12px;
+  color: inherit; /* 부모꺼 */
+  text-decoration: none;
+}
+
+#header_bottom h1{
+  padding-top: 20px;
+}
+
+#header_bottom h1 a{
+  display: block;
+  width: 160px;
+  height: 30px;
+  margin: 0 auto;
+}
+
+#h_bottom_fix{
+  position: relative;
+  padding: 12px 0;
+}
+
+.h_bot_left{
+  display: flex;
+  align-items: center;
+}
+
+.h_bot_left ul{
+  display: flex;
+  padding-left: 32px;
+}
+
+.h_bot_left ul a{
+  display: block;
+  padding: 0 17px;
+  font-weight: 700;
+  color: #222624;
+  line-height: 40px;
+  text-decoration: none;
+}
+
+.m_btn{
+  width: 26px;
+  height: 17px;
+  background-position: -22px -32px;
+}
+
+.h_bot_right{
+  position: absolute;
+  right: 0;
+  top: 12px;
+  display: flex;
+}
+
+.h_bot_right ul{
+  display: flex;
+}
+
+.h_bot_right ul li{
+  width: 45px;
+  height: 40px;
+  position: relative;
+}
+
+.h_bot_right a{
+  display: block;
+  position: absolute;
+}
+
+.mypage{
+  left: 12px;
+  top: 9.5px;
+  width: 21px;
+  height: 21px;
+  background-position: -50px -32px;
+}
+
+.scrap_box{
+  display: none;
+}
+
+.cart{
+  left: 9.5px;
+  top: 8px;
+  width: 26px;
+  height: 24px;
+  background-position: -73px -32px;
+}
+
+.write{
+  left: 11.5px;
+  top: 9px;
+  width: 22px;
+  height: 22px;
+  background-position: -101px -32px;
+}
+
+.search{ /* input을 수정하고싶다면 input의값을 다 지우고 부모에게 주자 */
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
+  border-radius: 4px;
+}
+
+.search input{
+  width: 160px;
+  height: 38px;
+  background-color: transparent;
+  border: none;
+  outline: none; /* 클릭했을때 나오는 검은칸 */
+}
+
+.search span{
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin-top: 5px;
+  background-position: -125px -32px;
+  margin: 0 11px;
+}
+
+@media (max-width: 1200px){
+  .w1200{
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .sp_common{
+    background-image: url(../../img/sp_common_t.png);
+    background-size: 112px auto;
+  }
+
+  #header_bottom h1 a{
+    width: 112px;
+    height: 21px;
+  }
+
+  .h_bot_left ul a{
+    line-height: 28px;
+  }
+
+  .m_btn{
+    width: 18px;
+    height: 12px;
+    background-position: -16px -23px;
+  }
+
+  .h_bot_right ul li{
+    width: 32px;
+    height: 28px;
+  }
+
+  .mypage{
+    left: 8.5px;
+    top: 6.5px;
+    width: 15px;
+    height: 15px;
+    background-position: -35px -23px;
+  }
+
+  .cart{
+    left: 7px;
+    top: 5.5px;
+    width: 18px;
+    height: 17px;
+    background-position: -51px -23px;
+  }
+
+  .write{
+    left: 8.25px;
+    top: 6.25px;
+    width: 15.5px;
+    height: 15.5px;
+    background-position: -70px -23px;
+  }
+
+  .search input{
+    height: 28px;
+  }
+
+  .search span{
+    width: 11.5px;
+    height: 11.5px;
+    background-position: -87px -23px;
+    margin-top: 5px;
+    margin: 0 11px;
+  }
+
+}
+
+@media (max-width: 767px){
+  .sp_common{
+    background-image: url(../../img/sp_common_m.png);
+    background-size: 100px auto;
+  }
+
+  .desk{
+    display: none;
+  }
+  
+  .mobile{
+    display: block;
+  }
+
+  #header_bottom_wrap{
+    height: 100px;
+  }
+
+  #header_bottom h1 a{
+    width: 88px;
+    height: 17px;
+  }
+
+  .m_btn{
+    position: absolute;
+    width: 20px;
+    height: 13px;
+    background-position: 0 -37px;
+    left: 10px;
+    top: 20px;
+  }
+
+  .h_bot_right{
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .h_bot_right ul{
+    position: absolute;
+    right: 10px;
+    top: 0;
+  }
+
+  .scrap_box{
+    display: block;
+  }
+
+  .scrap_box .scrap{
+    left: 8px;
+    top: 7px;
+    width: 15px;
+    height: 18px;
+    background-position: -21px -18px;
+  }
+
+  .cart{
+    left: 8px;
+    top: 7px;
+    width: 20px;
+    height: 18px;
+    background-position: 0 -18px;
+  }
+
+  .search span{
+    width: 15px;
+    height: 15px;
+    background-position: -57px -18px;
+    margin-top: 5px;
+    margin: 0 11px;
+  }
+
+  #header_top_wrap{
+    display: none;
+  }
+
+  #h_bottom_fix{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  .search{
+    position: relative;
+    width: 100%;
+    top: 40px;
+    border-radius: 20px;
+  }
+
+  .h_bot_left nav{
+    display: none;
+  }
+
+  .h_bot_right li:first-child{
+    display: none;
+  }
+
+  .h_bot_right li:last-child{
+    display: none;
+  }
+  
+}
